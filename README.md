@@ -76,3 +76,31 @@ Pada pertemuan atau minggu ke 9 ini terjadi beberapa masalah yang sangat lumayan
        `createProduk.hargaProduk = _hargaProdukTextboxController.text;`
 
 > Mungkin ada cara yang lebih mudah seperti parse atau _convert_ dari `String` ke `int`, tetapi saya sudah mencoba berbagai cara dan hanya cara ini yang berhasil untuk menampilkan **_List Produk_**
+
+## Pertemuan 6
+
+Saya mengalami beberapa kendala saat mengerjakan tugas ini:
+
+1.  **Gagal Registrasi ✔**
+
+    Saya mengalami masalah pada proses registrasi, karena dimodul menggunakan Android Emulator tetapi saya menggunakan Web Browser untuk menjalankan Flutter.
+
+    Oleh karena itu saya mencari cara untuk menjalankan Localhost Flutter pada Web Browser dan ternyata salah di baseUrl, kalau dimodul menggunakan:
+
+    `http://10.0.2.2/toko-api/public`
+
+    yaitu dikhususkan untuk Android Emulator, sedangkan kalau menggunakan Web Browser menggunakan IP Address dari jaringan yang terhubung contohnya:
+
+    `http://192.168.1.10/toko-api/public`
+
+    dan ada beberapa perubahan lain yang saya lakukan seperti langkah berikut:
+
+    ![text](/assets/solutions/flutter%20web%20fix.png)
+
+2.  **Gagal Login ❌**
+
+    Saya masih belum menemukan cara untuk menyelesaikan masalah login yang dimana masalah tersebut adalah:
+
+    `Expected a value of type 'int?', but got one of type 'String'`
+
+    Yaitu pada bagian variable `userID` yang meminta tipe `integer` tetapi malah mendapatkan tipe `String`. Setelah saya ubah variable nya menjadi `String` tetap saja tidak berhasil. Jadi saya masih mencari cara untuk menyelesaikan masalah login.
