@@ -1,5 +1,5 @@
 class ApiUrl {
-  static const String baseUrl = 'http://192.168.43.71/MProg-TokoAPI/public';
+  static const String baseUrl = 'http://192.168.1.10/MProg-TokoAPI/public';
 
   static const String registrasi = '$baseUrl/registrasi';
   static const String login = '$baseUrl/login';
